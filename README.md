@@ -1,4 +1,4 @@
-# 🎯 APM Product Sense Coach (CUPSPDM)
+# APM Product Sense Coach (CUPSPDM)
 
 > **Real-Time 1:1 Voice-Interactive AI Interviewer for Google APM Candidates**  
 > Powered by **Gemini Live API (`gemini-3.8-live`)**, **Zephyr Voice**, and the **7-Step CUPSPDM Framework**.
@@ -11,7 +11,7 @@
 
 ---
 
-## 📌 Executive Summary
+## Executive Summary
 
 **APM Product Sense Coach** is a production-grade, single-screen web application designed to simulate the high-stakes, 45-minute first-round **Google Associate Product Manager (APM) Internship interview**. 
 
@@ -21,7 +21,7 @@ The coach drives the interview, challenges candidates on edge cases, enforces ME
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 - **⚡ Real-Time Bidirectional Voice (Gemini Live API)**:
   - Low-latency full-duplex audio conversation powered by `gemini-3.8-live` with the expressive **Zephyr** prebuilt voice.
@@ -29,7 +29,7 @@ The coach drives the interview, challenges candidates on edge cases, enforces ME
 - **📐 Built-In 7-Step CUPSPDM Framework**:
   - Dynamically guides candidates through **C**larify, **U**ser Ecosystem, **P**roblem Prioritization, **S**olutions (10x ideas), **P**rioritize & Trade-offs, **D**esign & User Journey, and **M**easurement & Risks.
   - Interactive top-right framework modal detailing actionable tips and the **3 Core Google APM 45-Minute Interview Tracks** (*Product Vision, Product Analysis & Metric Drops, and Strategic Insights*).
-- **🛡️ Dual-Mode Architecture (Cloud Live + Offline Local Mode)**:
+- ** Dual-Mode Architecture (Cloud Live + Offline Local Mode)**:
   - **Cloud Live Mode**: Full-duplex WebSocket connection streaming 16kHz PCM audio to Gemini Live and receiving 24kHz PCM audio.
   - **Local Offline Fallback Mode**: If running locally without an API key or offline, the app seamlessly falls back to the browser's built-in `webkitSpeechRecognition` (STT) and `window.speechSynthesis` (TTS) to provide a complete 9-step guided interview loop with zero external dependencies.
 - **🪞 Minimalist Camera Feed & iPhone Shutter UX**:
@@ -42,7 +42,7 @@ The coach drives the interview, challenges candidates on edge cases, enforces ME
 
 ---
 
-## 🏗️ System Architecture & Data Flow
+## System Architecture & Data Flow
 
 ```
 ┌───────────────────────────────────────────────────────────────┐
@@ -87,7 +87,7 @@ The coach drives the interview, challenges candidates on edge cases, enforces ME
 
 ---
 
-## 🧠 The CUPSPDM Framework
+## The CUPSPDM Framework
 
 | Stage | Step | Focus in Google APM Interviews |
 |---|---|---|
@@ -101,7 +101,7 @@ The coach drives the interview, challenges candidates on edge cases, enforces ME
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: React 19, TypeScript, Tailwind CSS 4, Motion, Lucide Icons.
 - **Audio Processing**: Web Audio API (`AudioContext`, `AudioBufferSourceNode`, `ScriptProcessorNode`), Float32 to Int16 PCM little-endian encoders, Linear Resampling.
@@ -110,7 +110,7 @@ The coach drives the interview, challenges candidates on edge cases, enforces ME
 
 ---
 
-## ⚡ Quickstart & Local Setup
+## Quickstart & Local Setup
 
 ### 1. Prerequisites
 - Node.js (version 18 or higher)
@@ -147,7 +147,7 @@ npm install
 
 ---
 
-## 🔒 Security & Privacy
+## Security & Privacy
 
 - **No Secrets in Client Code**: All Gemini API credentials reside server-side in Node.js environment variables.
 - **Git-Ignored Secrets**: `.env` and `.env.*` files are explicitly excluded in `.gitignore` to prevent secret leakage.
@@ -155,5 +155,5 @@ npm install
 
 ---
 
-## 📜 License
+## License
 Distributed under the Apache-2.0 License.
