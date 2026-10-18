@@ -1,0 +1,6 @@
+{
+  "name": "APM Product Sense Coach",
+  "description": "Real-time 1:1 voice-interactive APM mock interview and product sense coach using the CUPS framework.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
